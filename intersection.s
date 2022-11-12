@@ -142,6 +142,8 @@ intersect:
     ret
 
 # checks if two squares are intersecting or not
+# input: 16 consecutive vertices in {(x1,y1), ...} format stored as longs
+# output: al = 1 if intersecting, 0 if not
 intersectingSquares:
     pushq %rbp
     movq %rsp, %rbp
